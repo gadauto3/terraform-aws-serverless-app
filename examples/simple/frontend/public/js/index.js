@@ -23,7 +23,8 @@ var App = function (_React$Component) {
     _this.state = {
       info: {
         application: "",
-        version: ""
+        version: "",
+        time: new Date()
       },
       config: config
     };
@@ -93,7 +94,9 @@ var App = function (_React$Component) {
                 'Application: ',
                 this.state.info.application,
                 '. Version: ',
-                this.state.info.version
+                this.state.info.version,
+                '. Time: ',
+                this.state.info.time
               ) : null,
               React.createElement(
                 'button',
